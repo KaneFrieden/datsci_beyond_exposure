@@ -1,3 +1,8 @@
 numpy==2.5.4
 pandas==3.0.6
 pyarrow==25.0.1
+openpyxl==3.1.5
+torch==2.14.0
+transformers==5.17.0
+sentencepiece==0.2.2
+sacremoses==0.1.1
