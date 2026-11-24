@@ -108,7 +108,8 @@ def main() -> None:
                 for row in group.itertuples(index=False)
             ],
         })
-    mixed_examples.sort(key=lambda item: (-item["events"], item["lemma"]))
+    mixed_examples.sort(key=lambda item: (-item["events"], item["lemma"])) # sort the mixed examples by the total number of events in descending order,
+    # and then by lemma alphabetically for consistent reporting.
 
     report = { # report to summ the parsing results
         "n_events": len(traces),
